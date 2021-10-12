@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wiq/screens/amazon.dart';
 import 'package:wiq/screens/google.dart';
+import 'package:wiq/screens/google1.dart';
 
 class MyTabs extends StatefulWidget {
   @override
@@ -13,7 +14,7 @@ class _MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    tabController = TabController(length: 2, vsync: this);
+    tabController = TabController(length: 1, vsync: this);
   }
 
   // dispose function
@@ -35,18 +36,20 @@ class _MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
           labelStyle: TextStyle(fontSize: 9, fontWeight: FontWeight.bold),
           tabs: <Tab>[
             Tab(
-              text: "تسجيل و تسجيل الدخول",
+              text: "",
             ),
+            /*
             Tab(
               text: "قائمة المهام",
             ),
+             */
           ],
         ),
       ),
       body: TabBarView(
         controller: tabController,
         children: <Widget>[
-          GoogleScreen(),
+          //AplicativoB2b(),
           AmazonScreen(),
         ],
       ),
