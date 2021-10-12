@@ -36,7 +36,7 @@ class _MyAppState extends State<AmazonScreen> {
                   ElevatedButton(
                       onPressed: () async {
                         await InAppBrowser.openWithSystemBrowser(
-                            url: Uri.parse("https://flutter.dev/"));
+                            url: Uri.parse("https://wiq.ru/tasks.php"));
                       },
                       child: Text("Open System Browser")),
                 ])));
