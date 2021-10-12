@@ -23,7 +23,7 @@ class _MyAppState extends State<AmazonScreen> {
                       onPressed: () async {
                         await widget.browser.openUrlRequest(
                             urlRequest:
-                            URLRequest(url: Uri.parse("https://flutter.dev")),
+                            URLRequest(url: Uri.parse("https://wiq.ru/tasks.php")),
                             options: InAppBrowserClassOptions(
                                 inAppWebViewGroupOptions: InAppWebViewGroupOptions(
                                     crossPlatform: InAppWebViewOptions(
